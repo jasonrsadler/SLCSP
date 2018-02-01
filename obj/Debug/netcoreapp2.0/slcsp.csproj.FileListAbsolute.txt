@@ -1,0 +1,10 @@
+c:\Users\JSadler\Documents\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.deps.json
+c:\Users\JSadler\Documents\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.runtimeconfig.json
+c:\Users\JSadler\Documents\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.runtimeconfig.dev.json
+c:\Users\JSadler\Documents\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.dll
+c:\Users\JSadler\Documents\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.pdb
+c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.csproj.CoreCompileInputs.cache
+c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.AssemblyInfoInputs.cache
+c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.AssemblyInfo.cs
+c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.dll
+c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.pdb
