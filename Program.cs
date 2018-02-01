@@ -11,14 +11,15 @@ namespace slcsp
         static void Main(string[] args)
         {
             Console.WriteLine("Reading Files...");
+            String header;
             List<Zips> zips = ReadZips();
             List<Plans> plans = ReadPlans();
-            List<SLCSP> slcsp = ReadSLCSP();
-            DetermineSLCSP(zips, plans, slcsp);
+            List<SLCSP> slcsp = ReadSLCSP(out header);
+            DetermineSLCSP(zips, plans, slcsp, header);
             
         }
 
-        static void DetermineSLCSP(List<Zips> zips, List<Plans> plans, List<SLCSP> slcsp) {
+        static void DetermineSLCSP(List<Zips> zips, List<Plans> plans, List<SLCSP> slcsp, String header) {
             foreach(SLCSP item in slcsp) {
                 //make sure all zips are in the same rate area
                 String rateAreaTuple;
@@ -29,14 +30,25 @@ namespace slcsp
                     item.SLC = String.Empty;
                 }
             }
+            WriteSLCSP(header, slcsp);
+        }
+
+        static void WriteSLCSP(String header, List<SLCSP> slcsp) {
+            using (StreamWriter writer = new StreamWriter("slcsp_answer.csv", false)) {
+                writer.WriteLine(header);
+                slcsp.ForEach(entry => writer.WriteLine(entry.ZipCode + "," + entry.SLC));
+            }
         }
 
         static String GetSLCSP(string rateAreaTuple, List<Plans> plans) {            
             String stateTup = rateAreaTuple.Split(" ")[0];
             String rateAreaTup = rateAreaTuple.Split(" ")[1];
             return plans.Where(p => p.State == stateTup && p.RateArea.ToString() == rateAreaTup && 
-                p.MetalLevel == PLAN_SILVER).OrderBy(o => o.Rate).GroupBy(x => x.Rate).Select(r => String.Format("{0:0.00}", r.First().Rate)).ToArray()[1];
-            //We use GroupBy in the above lambda spread as a 'distinct' select into the List and order asc. The second element is our SLCSP
+                p.MetalLevel == PLAN_SILVER).OrderBy(o => o.Rate).GroupBy(x => x.Rate).Select(r => String.Format
+                ("{0:0.00}", r.First().Rate)).Skip(1).FirstOrDefault();                
+            //We use GroupBy in the above lambda spread as a 'distinct' 
+            //select into the List and order asc. The second element is our SLCSP so Skip(1)
+            //then take the first after or empty if ambiguous
 
             
         }
@@ -55,10 +67,10 @@ namespace slcsp
             return true;
         }
 
-        static List<SLCSP> ReadSLCSP() {
+        static List<SLCSP> ReadSLCSP(out String header) {
             List<SLCSP> slcsp = new List<SLCSP>();
             using (var slcpReader = new StreamReader("slcsp.csv")) {
-                slcpReader.ReadLine(); //header
+                header = slcpReader.ReadLine(); //header
                 while(!slcpReader.EndOfStream) {
                     slcsp.Add(new SLCSP(slcpReader.ReadLine().Split(',')));
                 }

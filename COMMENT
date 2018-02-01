@@ -1,0 +1,25 @@
+To setup and run (tested on Ubuntu 16.04 x64):
+
+1. Install .NET Core following the instructions 
+for your version of linux at https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x
+
+2. Download and install VS Code from https://code.visualstudio.com/download
+
+3. Open VS Code and go to ->File->Open Folder and open the folder that contains the source
+
+4. Click Program.cs. VS Code will prompt you to install the C# plugin. 
+After finished click 'Reload' on the extensions menu.
+
+--Additional setup will occur in the VS Code console. wait until this finishes.
+
+Once the VS Code console says 'Done', close VS Code and reopen (you may get a 
+prompt that extensions were modified. Click 'Reload' on this)
+
+Ensure that the VS Code console is open with ->View->Integrated console
+and make sure you are in the same directory as the source.
+
+Press F5 to run the program. The program will write to an answer file called
+slcsp_answer.csv so as to preserve the original
+
+(You might get a preLaunchTask failed 'build' on the first run. 
+Click 'Debug Anyway' to run the program)

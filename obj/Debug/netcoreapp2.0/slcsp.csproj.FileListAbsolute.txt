@@ -8,3 +8,13 @@ c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.Assembly
 c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.AssemblyInfo.cs
 c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.dll
 c:\Users\JSadler\Documents\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.pdb
+e:\jsTuts\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.deps.json
+e:\jsTuts\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.runtimeconfig.json
+e:\jsTuts\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.runtimeconfig.dev.json
+e:\jsTuts\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.dll
+e:\jsTuts\homework\slcsp\bin\Debug\netcoreapp2.0\slcsp.pdb
+e:\jsTuts\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.csproj.CoreCompileInputs.cache
+e:\jsTuts\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.AssemblyInfoInputs.cache
+e:\jsTuts\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.AssemblyInfo.cs
+e:\jsTuts\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.dll
+e:\jsTuts\homework\slcsp\obj\Debug\netcoreapp2.0\slcsp.pdb

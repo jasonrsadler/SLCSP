@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JSadler\\.nuget\\packages\\": {},
+    "C:\\Users\\Gooses\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\JSadler\\Documents\\homework\\slcsp\\slcsp.csproj",
+      "projectUniqueName": "e:\\jsTuts\\homework\\slcsp\\slcsp.csproj",
       "projectName": "slcsp",
-      "projectPath": "c:\\Users\\JSadler\\Documents\\homework\\slcsp\\slcsp.csproj",
-      "packagesPath": "C:\\Users\\JSadler\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\JSadler\\Documents\\homework\\slcsp\\obj\\",
+      "projectPath": "e:\\jsTuts\\homework\\slcsp\\slcsp.csproj",
+      "packagesPath": "C:\\Users\\Gooses\\.nuget\\packages\\",
+      "outputPath": "e:\\jsTuts\\homework\\slcsp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\JSadler\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Gooses\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
